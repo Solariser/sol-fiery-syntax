@@ -84,14 +84,14 @@ atom-text-editor {
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @pink;
 
   &.syntax--character.syntax--escape {
     color: @red;
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @pink;
   }
 
   &.syntax--other.syntax--color {
@@ -99,7 +99,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--symbol {
-    color: #000000;
+    color: @beige;
   }
 }
 
@@ -111,7 +111,11 @@ atom-text-editor {
   }
 
   &.syntax--parameter.syntax--function {
-    color: @beige;
+    color: @syntax-text-color;
+  }
+
+  &.syntax--symbol {
+      color: @light-pink;
   }
 }
 
@@ -144,10 +148,13 @@ atom-text-editor {
     }
 
     &.syntax--string,
-    &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
       color: @beige;
+    }
+
+    &.syntax--variable {
+        color: @light-pink;
     }
 
     &.syntax--heading,
@@ -271,7 +278,7 @@ atom-text-editor {
   }
 
   &.syntax--inserted {
-    color: #FFFFFF;
+    color: @beige;
   }
 
   &.syntax--list {
